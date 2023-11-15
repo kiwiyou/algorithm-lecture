@@ -1,5 +1,5 @@
 const { readFileSync } = require("fs");
-const token = readFileSync(0, { encoding: "utf-8" })
+const token = readFileSync(0, { encoding: "ascii" })
   .split(/\s+/)
   [Symbol.iterator]();
 const line = [];
