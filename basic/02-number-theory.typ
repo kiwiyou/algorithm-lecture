@@ -14,7 +14,7 @@
 
   #text(size: 0.8em)[
     연세대학교 전우제#super[kiwiyou] \
-    2023.11.25.r2
+    2023.11.25.r3
   ]
 ]
 
@@ -121,8 +121,6 @@
 
   #pagebreak()
 
-  - $N$의 두 번째로 큰 소인수는 항상 $sqrt(N)$ 이하
-  
   - 작은 약수부터 찾아 나눌 때, 나누어지지 않을 때까지 나눠보기
 
   #algorithm({
@@ -130,7 +128,7 @@
       Function([Factorize], args: ([$N$], ))
       Assign[$i$][$2$]
       While(
-        cond: [$i <= N$],
+        cond: [$i^2 <= N$],
         While(
           cond: [$N equiv 0 space (mod i)$],
           State[*print* $i$],
