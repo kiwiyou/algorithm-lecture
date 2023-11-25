@@ -14,7 +14,7 @@
 
   #text(size: 0.8em)[
     연세대학교 전우제#super[kiwiyou] \
-    2023.11.25.r1
+    2023.11.25.r2
   ]
 ]
 
@@ -111,12 +111,38 @@
           cond: [$N equiv 0 space (mod i)$],
           Return[*false*]
         ),
+        Assign[$i$][$i + 1$],
       )
       Return[*true*]
     })
 
     - 정수 연산은 정확
   ]
+
+  #pagebreak()
+
+  - $N$의 두 번째로 큰 소인수는 항상 $sqrt(N)$ 이하
+  
+  - 작은 약수부터 찾아 나눌 때, 나누어지지 않을 때까지 나눠보기
+
+  #algorithm({
+      import algorithmic: *
+      Function([Factorize], args: ([$N$], ))
+      Assign[$i$][$2$]
+      While(
+        cond: [$i <= N$],
+        While(
+          cond: [$N equiv 0 space (mod i)$],
+          State[*print* $i$],
+          Assign[$N$][$N slash i$],
+        ),
+        Assign[$i$][$i + 1$],
+      )
+      If(
+        cond: $N eq.not 1$,
+        State[*print* $N$],
+      )
+    })
 ]
 
 #slide.slide[과제][
@@ -167,6 +193,29 @@
       )
     )
     Return[primeList]
+  })
+
+  #pagebreak()
+
+  - 체에 `true`, `false` 대신 그 수의 소인수를 넣는다면?
+
+  #algorithm({
+    import algorithmic: *
+    Function([Find-Prime-Factors], args: ([$N$], ))
+    Assign[primeFactor$[i]$][$i$]
+    For(
+      cond: [$i = 2$ *upto* $N$],
+      If(
+        cond: [primeFactor$[i] = i$],
+        Assign[$j$][$2 times i$],
+        While(
+          cond: [$j <= N$],
+          Assign[primeFactor$[j]$][$i$],
+          Assign[$j$][$j + i$]
+        ),
+      )
+    )
+    Return[primeFactor]
   })
 ]
 
