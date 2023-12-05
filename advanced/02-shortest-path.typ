@@ -17,7 +17,7 @@
 
   #text(size: 0.8em)[
     연세대학교 전우제#super[kiwiyou] \
-    2023.11.30.r1
+    2023.12.05.r1
   ]
 ]
 
@@ -375,7 +375,7 @@
       Return[$D$]
     })
   })
-  - $d > D[u]$ 체크가 빠지면 $cal(O)(V^2 log E)$!
+  - $d > D[u]$ 체크가 빠지면 $cal(O)(V^2 + E log E)$!
 ]
 
 #slide.slide[과제][
