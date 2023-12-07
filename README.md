@@ -17,6 +17,18 @@
   - [2421 저금통](https://acmicpc.net/problem/2421)
   - [16563 어려운 소인수분해](https://acmicpc.net/problem/16563)
 
+### [03. 선형 자료구조](https://github.com/kiwiyou/algorithm-lecture/blob/main/basic/03-linear-data.pdf)
+  - [27522 카트라이더: 드리프트](https://acmicpc.net/problem/27522)
+  - [29723 브실이의 입시전략](https://acmicpc.net/problem/29723)
+  - [30684 모르고리즘 회장 정하기](https://acmicpc.net/problem/30684)
+  - [30047 함수 문자열](https://acmicpc.net/problem/30047)
+  - [17952 과제는 끝나지 않아!](https://acmicpc.net/problem/17952)
+  - [11899 괄호 끼워넣기](https://acmicpc.net/problem/11899)
+  - [23827 수열 (Easy)](https://acmicpc.net/problem/23827)
+  - [21921 블로그](https://acmicpc.net/problem/21921)
+  - [25947 선물할인](https://acmicpc.net/problem/25947)
+  - [28427 Tricknology](https://acmicpc.net/problem/28427)
+
 ## [중급](https://github.com/kiwiyou/algorithm-lecture/tree/main/advanced)
 
 ### [01. 해답의 구성](https://github.com/kiwiyou/algorithm-lecture/blob/main/advanced/01-constructive.pdf)
