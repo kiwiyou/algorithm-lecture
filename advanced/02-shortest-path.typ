@@ -49,7 +49,7 @@
 
     $ sum mat(
       a_(t, l), a_(t, l+1), ..., a_(t, r);
-      a_(t+1, l), a_(t+1, l+1), a_(t+1, r);
+      a_(t+1, l), a_(t+1, l+1), ..., a_(t+1, r);
       dots.v, dots.v, dots.down, dots.v;
       a_(b, l), a_(b, l+1), ..., a_(b, r);
     ) = S_(b, r) - S_(t - 1, r) - S_(b, l - 1) + S_(t - 1, l - 1) $
