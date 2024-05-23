@@ -14,7 +14,7 @@
 
   #text(size: 0.8em)[
     연세대학교 전우제#super[kiwiyou] \
-    2023.12.29.r1
+    2024.05.23.r1
   ]
 ]
 
@@ -52,14 +52,14 @@
           Assign[$m$][#FnI[midpoint][$l$, $r$]]
           If(
             cond: $A[m] < x$,
-            Assign[$r$][$m$]
+            Assign[$l$][$m + 1$]
           )
           ElseIf(
             cond: $A[m] = x$,
             Return[$m$]
           )
           Else(
-            Assign[$l$][$m + 1$]
+            Assign[$r$][$m$]
           )
         }
       )
@@ -90,10 +90,10 @@
           Assign[$m$][#FnI[midpoint][$l$, $r$]]
           If(
             cond: $A[m] < x$,
-            Assign[$r$][$m$]
+            Assign[$l$][$m + 1$]
           )
           Else(
-            Assign[$l$][$m + 1$]
+            Assign[$r$][$m$]
           )
         }
       )
@@ -135,10 +135,10 @@
           Assign[$m$][#FnI[midpoint][$l$, $r$]]
           If(
             cond: $f(m)$,
-            Assign[$r$][$m$]
+            Assign[$l$][$m + 1$]
           )
           Else(
-            Assign[$l$][$m + 1$]
+            Assign[$r$][$m$]
           )
         }
       )
